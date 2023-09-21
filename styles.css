@@ -100,10 +100,6 @@ sub {
     bottom: -0.25em
 }
 
-img {
-    border: 0
-}
-
 svg:not(:root) {
     overflow: hidden
 }
@@ -290,7 +286,10 @@ body {
 img {
     max-width: 100%;
     vertical-align: middle;
-    display: inline-block
+    display: inline-block;
+    image-orientation: from-image;
+    display: block;
+    border: 0
 }
 
 html.w-mod-touch * {
@@ -2310,10 +2309,6 @@ ul {
 li {
     margin-bottom: 10px;
     border-left: 1px solid #000;
-}
-
-img {
-    display: block;
 }
 
 label {
